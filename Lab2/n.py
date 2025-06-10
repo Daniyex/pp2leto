@@ -3,4 +3,4 @@ thisset.add("orange")
 print(thisset)
 
 thisset.discard("banana")
-print(thisset)
+print()
