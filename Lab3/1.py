@@ -3,6 +3,6 @@ def gramstoounces(gramm):
     return ounces
 
 
-gramm = int(input())
+gramm = int(input("input gramm: "))
 ounces = gramstoounces(gramm)
 print(ounces)

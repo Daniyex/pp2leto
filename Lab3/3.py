@@ -1,10 +1,11 @@
-def sum(heads,legs):
+def solve(heads, legs):
     for chickens in range(heads + 1):
         rabbits = heads - chickens
-        if (chickens * 2 + rabbits * 4) == legs:
-            return chickens, rabbits
+        if 2 * chickens + 4 * rabbits == legs:
+            print(f"Chickens: {chickens}, Rabbits: {rabbits}")
+            return
+    print("No solution found.")
 
 heads = int(input())
 legs = int(input())
-chickens,rabbits = sum(heads,legs)
-print(f"chickens: {chickens},rabbits: {rabbits}")
+solve(heads,legs)
