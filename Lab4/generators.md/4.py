@@ -1,9 +1,10 @@
 def squares(a, b):
-    for num in range(a, b + 1):  
-        yield num ** 2 
+    for i in range(a, b + 1):
+        yield i ** 2
 
-a = int(input())
-b = int(input())
+start = int(input())
+end = int(input())
 
-for square in squares(a, b):
+print(f"Squares from {start} to {end}:")
+for square in squares(start, end):
     print(square)
